@@ -7,9 +7,10 @@ import java.io.InputStreamReader;
 
 public class Calculator {
     public static void main(String[] args) throws IOException {
-
+        
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+            while(true){
             String line = reader.readLine();
             char[] chars = line.toCharArray();
             ConvertNumbers rimNums = new ConvertNumbers();
@@ -110,6 +111,7 @@ public class Calculator {
                     System.out.println(res);
                     break;
                 }
+            }
             }
     }
 }
