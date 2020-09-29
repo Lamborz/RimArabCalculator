@@ -43,6 +43,7 @@ public class Calculator {
                         arabSecond = Integer.parseInt(line.substring(i + 1, line.length()));
                         result = arabFirst / arabSecond;
                         System.out.println(result);
+                        break;
                     } else if (chars[i] == '+') {
                         arabFirst = Integer.parseInt(line.substring(0, i));
                         arabSecond = Integer.parseInt(line.substring(i + 1, line.length()));
@@ -69,6 +70,7 @@ public class Calculator {
                         arabSecond = Integer.parseInt(line.substring(i + 1, line.length()));
                         result = arabFirst / arabSecond;
                         System.out.println(result);
+                        break;
                     }
                 }
                 if(chars[i]=='+'){
