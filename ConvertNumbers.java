@@ -74,9 +74,97 @@ public int convertRimToArab(String rimNum){
     return result;
 }
 
-
-    public String convertArabToRim(int num) {
+    public String convertingArabToRomeFromm10To100ForFirstArabDig(int num) {
         String result ;
+
+        switch (num) {
+            case 1:
+                result = "X";
+                break;
+            case 2:
+                result = "XX";
+                break;
+            case 3:
+                result = "XXX";
+                break;
+            case 4:
+                result = "XL";
+                break;
+            case 5:
+                result = "L";
+                break;
+            case 6:
+                result = "LX";
+                break;
+            case 7:
+                result = "LXX";
+                break;
+            case 8:
+                result = "LXXX";
+                break;
+            case 9:
+                result = "XC";
+                break;
+            case 10:
+                result = "C";
+                break;
+            case 50:
+                result = "D";
+                break;
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + num);
+        }
+        return result;
+
+    }
+    public String convertArabToRimFirst(int num) {
+        String result ;
+
+        switch (num) {
+
+
+            case 1:
+                result = "X";
+                break;
+            case 2:
+                result = "XX";
+                break;
+            case 3:
+                result = "XXX";
+                break;
+            case 4:
+                result = "XL";
+                break;
+            case 5:
+                result = "L";
+                break;
+            case 6:
+                result = "LX";
+                break;
+            case 7:
+                result = "LXX";
+                break;
+            case 8:
+                result = "LXXX";
+                break;
+            case 9:
+                result = "XC";
+                break;
+            case 10:
+                result = "C";
+                break;
+            case 50:
+                result = "D";
+                break;
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + num);
+        }
+        return result;
+    }public String convertArabToRimForSecondDig(int num) {
+        String result ;
+
         switch (num) {
             case 1:
                 result = "I";
@@ -107,36 +195,6 @@ public int convertRimToArab(String rimNum){
                 break;
             case 10:
                 result = "X";
-                break;
-            case 11:
-                result = "XI";
-                break;
-            case 12:
-                result = "XII";
-                break;
-            case 13:
-                result = "XIII";
-                break;
-            case 14:
-                result = "XIV";
-                break;
-            case 15:
-                result = "XV";
-                break;
-            case 16:
-                result = "XVI";
-                break;
-            case 17:
-                result = "XVII";
-                break;
-            case 18:
-                result = "XVIII";
-                break;
-            case 19:
-                result = "XIX";
-                break;
-            case 20:
-                result = "XX";
                 break;
 
             default:
